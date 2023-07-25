@@ -1,76 +1,109 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-html{
-    color: 02020E;
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  background: #02020E;
 }
-/* Form Styles */
-.form__group {
-    position: relative;
-    padding: 15px 0 0;
-    margin-top: 10px;
-    width: 50%;
-  }
-  
-  .form__field {
-    font-family: inherit;
-    width: 100%;
-    border: 0;
-    border-bottom: 2px solid #9b9b9b;
-    outline: 0;
-    font-size: 1.3rem;
-    color: #fff;
-    padding: 7px 0;
-    background: transparent;
-    transition: border-color 0.2s;
-  }
-  
-  .form__field::placeholder {
-    color: transparent;
-  }
-  
-  .form__field:placeholder-shown ~ .form__label {
-    font-size: 1.3rem;
-    cursor: text;
-    top: 20px;
-  }
-  
-  .form__label {
-    position: absolute;
-    top: 0;
-    display: block;
-    transition: 0.2s;
-    font-size: 1rem;
-    color: #9b9b9b;
-  }
-  
-  .form__field:focus ~ .form__label {
-    position: absolute;
-    top: 0;
-    display: block;
-    transition: 0.2s;
-    font-size: 1rem;
-    color: #11998e;
-    font-weight: 700;
-  }
-  
-  .form__field:focus {
-    padding-bottom: 6px;
-    font-weight: 700;
-    border-width: 3px;
-    border-image: linear-gradient(to right, #11998e, #38ef7d);
-    border-image-slice: 1;
-  }
-  
-  /* Reset Input Styles */
-  .form__field:required,
-  .form__field:invalid {
-    box-shadow: none;
-  }
-  
-  /* Demo Styles */
-  body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
+.card {
+  position: relative;
+  padding: 1.2rem 0 0;
+  margin-top: 10vh;
+  width: 30%;
+}
+.search{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search button{
+  border:0;
+  outline:0;
+  background: #1A1B26;
+  cursor: pointer;
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-left: 1rem;
+  margin-top: .5rem;
+}
+.search button img{
+  width: 1.5rem;
+  margin-top:0.2rem;
+}
+.form__field {
+  flex: 1;
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #A8A8A8;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #fff;
+  font-family: Inter;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+  font-weight: 400;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #A8A8A8;
+}
+
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: white;
+  font-weight: 700;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-color: white;
+  border-image-slice: 1;
+}
+.form__field:required,
+.form__field:invalid {
+  box-shadow: none;
+}
+.weather{
+  border-radius: 35px;
+background: #222326;
+}
+.weather{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 35px;
+  background: #222326;
+  width:60vh;
+height: 60.13vh;
+margin: 2rem -1rem;
+color: #fff;
+}
