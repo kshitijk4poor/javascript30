@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Ubuntu:wght@500;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #02020E;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+.box{
+    max-width: 50vw;
+    max-height:80vh;
+    padding: 2rem;
+    background: #222326;
+    text-align: center;
+    color: white;
+}
+.box h2{
+    font-size: 2em;
+    margin-bottom: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+.row{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top:3rem;
+}
+.row button{
+    margin: 2rem;
+  appearance: none;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.box button:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.box button:hover {
+  background-color: #2c974b;
+}
+
+.box button:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+.box button:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+.box blockquote{
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.box span{
+    font-family: 'Ubuntu', sans-serif;
+}
