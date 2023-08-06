@@ -17,10 +17,13 @@
 h1{
     color: white;
 }
+h1 img{
+    height: 60px;
+}
 button{
     border: none;
     outline: none;
-    color: white;
+    color: black;
     background: #FDBA16;
     cursor: pointer;
     border-radius: 15px;
@@ -35,11 +38,25 @@ p {
 .input-box{
     position: relative;
     width: 100%;
+    min-width: 20vw;
     max-width: 40vw;
-    min-height: 35vh;
+    min-height: 30vh;
     background: #88C176;
-    color:white;
+    color:black;
     outline: none;
-    padding:0rem;
+    padding:1rem;
     margin: 2rem 0;
+}
+.input-box img{
+    position: absolute;
+    width: 20px;
+    bottom: 15px;
+    right: 15px;
+    background-color:#88C176;
+    cursor: pointer;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
 }

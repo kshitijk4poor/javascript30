@@ -10,17 +10,15 @@
     </head>
     <body>
         <div class="container">
-            <h1>Notes</h1>
-        <button onclick="notes()">Create</button>
+            <h1><img src="img/notes.png">Notes</h1>
+        <button class="btn">Create</button>
             <div class="notes-container">
-                <p contenteditable="true" class="input-box"></p>
+                <!-- <p contenteditable="true" class="input-box">
+                    <img src="img/delete.png">
+                </p> -->
             </div>
         </div>
-        <script>
-            function notes(){
-                document.getElementById("input-box").style.padding='1rem';
-            }
-        </script>
+        <script src="notes.js" async defer></script>
         
     </body>
 </html>
