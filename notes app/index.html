@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Notes</h1>
+        <button onclick="notes()">Create</button>
+            <div class="notes-container">
+                <p contenteditable="true" class="input-box"></p>
+            </div>
+        </div>
+        <script>
+            function notes(){
+                document.getElementById("input-box").style.padding='1rem';
+            }
+        </script>
+        
+    </body>
+</html>
