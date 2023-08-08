@@ -42,6 +42,25 @@ function showQuestion(){
         button.innerHTML = answer.text;
         button.classList.add("btn");
         answerBtn.appendChild(button);
+        button.addEventListener("click", selectAnswer);
     })
+}
+
+function resetState(){
+    nextBtn.style.display='none';
+    while (answerBtn.firstChild){
+        answerBtn.removeChild(answerbuttons.firstChild);
+    }
+}
+
+function selectAnswer(e){
+ const selectedBtn = e.target;
+ const isCorrect = selectedBtn.dataset.correct === true;
+ if (isCorrect){
+    selectedBtn.classList.add("correct");
+ }
+ else{
+    selectedBtn.classList.add("incorrect");
+ }
 }
 StartQuiz();
